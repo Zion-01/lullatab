@@ -12,7 +12,7 @@ const CHECK_ALARM = 'check-idle-tabs';
 // each other's updates to the lastActive map.
 let queue = Promise.resolve();
 function serial(fn) {
-  queue = queue.then(fn).catch((err) => console.error('Lullatab:', err));
+  queue = queue.then(fn).catch((err) => console.error('Lunatab:', err));
   return queue;
 }
 

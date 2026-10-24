@@ -1,9 +1,9 @@
-# Lullatab
+# Lunatab
 
 A free browser extension that cuts memory use by putting tabs you aren't
 using to sleep. Works in Chrome, Edge, Brave, Opera, Vivaldi and Firefox.
 
-![Lullatab popup showing memory use, open and sleeping tabs, and a list of idle tabs](store/images/screenshot-1-overview.png)
+![Lunatab popup showing memory use, open and sleeping tabs, and a list of idle tabs](store/images/screenshot-1-overview.png)
 
 A sleeping tab stays in your tab bar with its title and icon, but the browser
 unloads the page and frees its memory. Click the tab and it reloads. This uses
@@ -32,25 +32,25 @@ from the latest release. It takes about a minute.
 
 ### Chrome, Edge, Brave, Opera, Vivaldi (version 121 or newer)
 
-1. Download **[lullatab-chromium.zip](https://github.com/Zion-01/lullatab/releases/latest/download/lullatab-chromium.zip)**
+1. Download **[lunatab-chromium.zip](https://github.com/Zion-01/lunatab/releases/latest/download/lunatab-chromium.zip)**
    and unzip it. Keep the unzipped folder somewhere permanent, like your
-   Documents folder: the browser loads Lullatab from it every time.
+   Documents folder: the browser loads Lunatab from it every time.
 2. Open your browser's extensions page: `chrome://extensions`,
    `edge://extensions`, `brave://extensions`, `opera://extensions` or
    `vivaldi://extensions`.
 3. Turn on **Developer mode** (a switch on that page).
 4. Click **Load unpacked** and choose the unzipped folder.
-5. Click the puzzle-piece icon in the toolbar and pin Lullatab (the moon).
+5. Click the puzzle-piece icon in the toolbar and pin Lunatab (the moon).
 
 To update later, download the new zip, replace the folder's contents, and
-click the reload arrow on Lullatab's card on the extensions page.
+click the reload arrow on Lunatab's card on the extensions page.
 
 ### Firefox (version 121 or newer)
 
-Until the Firefox Add-ons listing is live, Firefox can only run Lullatab
+Until the Firefox Add-ons listing is live, Firefox can only run Lunatab
 temporarily: it's removed when Firefox closes.
 
-1. Download **[lullatab-firefox.zip](https://github.com/Zion-01/lullatab/releases/latest/download/lullatab-firefox.zip)**
+1. Download **[lunatab-firefox.zip](https://github.com/Zion-01/lunatab/releases/latest/download/lunatab-firefox.zip)**
    (don't unzip it).
 2. Open `about:debugging#/runtime/this-firefox`.
 3. Click **Load Temporary Add-on…** and pick the zip file.
@@ -64,7 +64,7 @@ may note that `background.scripts` is ignored; that entry is for Firefox.
 ### Safari
 
 Not supported. Safari has no API that lets an extension put a tab to sleep,
-which is the core of what Lullatab does. Safari already unloads background
+which is the core of what Lunatab does. Safari already unloads background
 tabs by itself when memory runs low.
 
 ## Things to know
@@ -85,7 +85,7 @@ tabs by itself when memory runs low.
 | `lib.js` | Settings, sleep rules and duplicate detection shared by both scripts |
 | `popup.html/css/js` | The toolbar popup |
 | `build.py` | Builds the store packages into `dist/` (`python build.py`) |
-| `PUBLISHING.md` | Step-by-step guide to listing Lullatab in each store |
+| `PUBLISHING.md` | Step-by-step guide to listing Lunatab in each store |
 | `PRIVACY.md` | Privacy policy for the store listings |
 | `store/` | Store description, permission justifications and images |
 

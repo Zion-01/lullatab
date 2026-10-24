@@ -1,13 +1,13 @@
-# Publishing Lullatab
+# Publishing Lunatab
 
 Two store listings cover every supported browser:
 
 | Store | Reaches | Cost | Package |
 | --- | --- | --- | --- |
-| Chrome Web Store | Chrome, Brave, Vivaldi, Arc, and Opera (Opera can install from it) | $5 one-time | `dist/lullatab-chromium-*.zip` |
-| Firefox Add-ons (AMO) | Firefox | Free | `dist/lullatab-firefox-*.zip` |
-| Edge Add-ons (recommended) | Edge (Edge can also install from the Chrome Web Store, but most Edge users search their own store) | Free | `dist/lullatab-chromium-*.zip` |
-| Opera add-ons (optional) | Opera | Free | `dist/lullatab-chromium-*.zip` |
+| Chrome Web Store | Chrome, Brave, Vivaldi, Arc, and Opera (Opera can install from it) | $5 one-time | `dist/lunatab-chromium-*.zip` |
+| Firefox Add-ons (AMO) | Firefox | Free | `dist/lunatab-firefox-*.zip` |
+| Edge Add-ons (recommended) | Edge (Edge can also install from the Chrome Web Store, but most Edge users search their own store) | Free | `dist/lunatab-chromium-*.zip` |
+| Opera add-ons (optional) | Opera | Free | `dist/lunatab-chromium-*.zip` |
 
 All the text to paste is in [store/listing.md](store/listing.md), and the
 images are in [store/images](store/images).
@@ -24,9 +24,9 @@ images are in [store/images](store/images).
 2. **Privacy policy, homepage and support links** are already online in the
    public GitHub repository. They're listed under "Links" in
    [store/listing.md](store/listing.md):
-   - Privacy policy: https://github.com/Zion-01/lullatab/blob/main/PRIVACY.md
-   - Homepage: https://github.com/Zion-01/lullatab
-   - Support: https://github.com/Zion-01/lullatab/issues
+   - Privacy policy: https://github.com/Zion-01/lunatab/blob/main/PRIVACY.md
+   - Homepage: https://github.com/Zion-01/lunatab
+   - Support: https://github.com/Zion-01/lunatab/issues
 
 3. **Decide which email address stores show publicly** as the developer
    contact. A separate address just for this is a good idea.
@@ -40,7 +40,7 @@ images are in [store/images](store/images).
 3. In **Account**, choose whether you're a *trader* (selling or acting as a
    business) or a *non-trader* (a hobby project). This is an EU rule; for a
    free personal project, non-trader is usual.
-4. Click **New item** and upload `dist/lullatab-chromium-*.zip`.
+4. Click **New item** and upload `dist/lunatab-chromium-*.zip`.
 5. **Store listing** tab: paste the description, pick the category, upload
    the 128px icon, the 3 screenshots and the 440×280 promo tile.
 6. **Privacy practices** tab: paste the single purpose and the four
@@ -56,7 +56,7 @@ images are in [store/images](store/images).
 1. Go to addons.mozilla.org/developers and sign in or create a Mozilla
    account (free).
 2. Click **Submit a New Add-on** → **On this site** (public listing).
-3. Upload `dist/lullatab-firefox-*.zip`. The automatic check will show two
+3. Upload `dist/lunatab-firefox-*.zip`. The automatic check will show two
    warnings about `system.memory`; that is expected (see the reviewer notes
    in `store/listing.md`).
 4. Answer **No** to "Do you need to submit source code?" (nothing is minified).
@@ -65,7 +65,7 @@ images are in [store/images](store/images).
 6. Submit. Mozilla often approves within a day, sometimes after a later
    manual review.
 
-The add-on ID `lullatab@inventions.local` in `manifest.json` becomes
+The add-on ID `lunatab@inventions.local` in `manifest.json` becomes
 permanent once you submit, so don't change it afterwards.
 
 ## 3. Edge Add-ons
@@ -73,7 +73,7 @@ permanent once you submit, so don't change it afterwards.
 1. Go to Partner Center (partner.microsoft.com/dashboard/microsoftedge) and
    sign in with a personal Microsoft account (or GitHub). Registering is
    free; pick **Individual**.
-2. Click **Create new extension** and upload `dist/lullatab-chromium-*.zip`.
+2. Click **Create new extension** and upload `dist/lunatab-chromium-*.zip`.
 3. **Availability**: Public, all markets.
 4. **Properties**: category Productivity, privacy policy link, website and
    support links.
@@ -83,7 +83,7 @@ permanent once you submit, so don't change it afterwards.
 
 ## 4. Opera add-ons (optional)
 
-Opera users can already install Lullatab from the Chrome Web Store, and
+Opera users can already install Lunatab from the Chrome Web Store, and
 Opera's own store reviews are known to take weeks or months. If you still
 want a listing there: sign in at addons.opera.com/developer, upload the
 Chromium zip, then fill in the **General**, **Media** and **Translations**

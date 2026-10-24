@@ -1,18 +1,18 @@
-# Lullatab privacy policy
+# Lunatab privacy policy
 
 _Last updated: 24 October 2026_
 
-Lullatab is a browser extension that puts inactive tabs to sleep to save
+Lunatab is a browser extension that puts inactive tabs to sleep to save
 memory. This policy explains what it does with your information.
 
-## What Lullatab collects
+## What Lunatab collects
 
-Nothing. Lullatab has no servers, no accounts, no analytics and no ads. It
+Nothing. Lunatab has no servers, no accounts, no analytics and no ads. It
 never sends any information off your computer.
 
 ## What stays on your computer
 
-To work, Lullatab reads and stores a few things locally in your browser's
+To work, Lunatab reads and stores a few things locally in your browser's
 own extension storage:
 
 - **Your tabs' titles, addresses and state** (pinned, playing audio, asleep)
@@ -24,19 +24,19 @@ own extension storage:
   pinned and audio tabs awake, and your list of sites to keep awake. If you
   use your browser's sync, the browser may sync these settings between your
   own devices.
-- **A count of how many tabs Lullatab has put to sleep.**
+- **A count of how many tabs Lunatab has put to sleep.**
 - **Your computer's total and available memory** (Chromium browsers only),
   shown in the popup and not saved.
 
-Lullatab never reads the content of web pages.
+Lunatab never reads the content of web pages.
 
 ## Sharing
 
-Lullatab does not sell, share or transfer any information to anyone.
+Lunatab does not sell, share or transfer any information to anyone.
 
 ## Removing your data
 
-Uninstalling Lullatab deletes everything it stored.
+Uninstalling Lunatab deletes everything it stored.
 
 ## Changes
 
@@ -45,4 +45,4 @@ If this policy changes, the new version will be posted here with a new date.
 ## Contact
 
 Questions about this policy: open an issue at
-https://github.com/Zion-01/lullatab/issues
+https://github.com/Zion-01/lunatab/issues

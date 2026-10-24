@@ -1,10 +1,10 @@
-# Lullatab store listing
+# Lunatab store listing
 
 Copy these into each store's form. The same text works in every store.
 
 ## Name
 
-Lullatab
+Lunatab
 
 ## Short description / summary (max 132 characters)
 
@@ -19,7 +19,7 @@ Cuts your browser's memory use by putting tabs you aren't using to sleep.
 
 ## Full description
 
-> Too many tabs slowing your computer down? Lullatab puts the tabs you
+> Too many tabs slowing your computer down? Lunatab puts the tabs you
 > aren't using to sleep, so your browser gives memory back to the rest of
 > your computer.
 >
@@ -43,7 +43,7 @@ Cuts your browser's memory use by putting tabs you aren't using to sleep.
 > • Sites you mark "Keep awake", like your email or a document you're writing
 >
 > PRIVATE BY DESIGN
-> Lullatab uses the browser's own built-in tab sleeping. It never reads page
+> Lunatab uses the browser's own built-in tab sleeping. It never reads page
 > content, never changes pages, has no account, no analytics, and sends
 > nothing anywhere. Everything stays on your computer.
 >
@@ -66,7 +66,7 @@ Cuts your browser's memory use by putting tabs you aren't using to sleep.
 
 **Single purpose**
 
-> Lullatab reduces browser memory use by putting inactive tabs to sleep
+> Lunatab reduces browser memory use by putting inactive tabs to sleep
 > (discarding them) and helping users close duplicate tabs.
 
 **Permission justifications**
@@ -83,15 +83,15 @@ Cuts your browser's memory use by putting tabs you aren't using to sleep.
 **Data usage:** tick **none** of the data types. Then tick all three
 certifications (no selling data, no unrelated use, no creditworthiness use).
 
-**Privacy policy URL:** https://github.com/Zion-01/lullatab/blob/main/PRIVACY.md
+**Privacy policy URL:** https://github.com/Zion-01/lunatab/blob/main/PRIVACY.md
 
 ## Links (all stores)
 
 | Field | Link |
 | --- | --- |
-| Privacy policy | https://github.com/Zion-01/lullatab/blob/main/PRIVACY.md |
-| Homepage / website | https://github.com/Zion-01/lullatab |
-| Support | https://github.com/Zion-01/lullatab/issues |
+| Privacy policy | https://github.com/Zion-01/lunatab/blob/main/PRIVACY.md |
+| Homepage / website | https://github.com/Zion-01/lunatab |
+| Support | https://github.com/Zion-01/lunatab/issues |
 
 ## Firefox Add-ons (AMO) extras
 
