@@ -95,8 +95,8 @@ certifications (no selling data, no unrelated use, no creditworthiness use).
 
 ## Firefox Add-ons (AMO) extras
 
-- **License:** you choose. MIT is a common, permissive choice for a free
-  extension. AMO asks for this when you submit.
+- **License:** choose **MIT License** when AMO asks (it matches the
+  repository's `LICENSE` file).
 - **Source code:** not needed. Nothing is minified or bundled.
 - **Notes to reviewer:**
 

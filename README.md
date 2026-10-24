@@ -88,3 +88,7 @@ tabs by itself when memory runs low.
 | `PUBLISHING.md` | Step-by-step guide to listing Lullatab in each store |
 | `PRIVACY.md` | Privacy policy for the store listings |
 | `store/` | Store description, permission justifications and images |
+
+## License
+
+[MIT](LICENSE): free to use, change and share.
