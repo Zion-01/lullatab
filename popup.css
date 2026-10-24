@@ -1,0 +1,110 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --surface: #f4f4f8;
+  --text: #1c1c24;
+  --muted: #6b6b7b;
+  --border: #e2e2ea;
+  --accent: #5b5bd6;
+  --accent-text: #ffffff;
+  --warn: #d97706;
+  --danger: #dc2626;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #18181f;
+    --surface: #23232c;
+    --text: #ececf1;
+    --muted: #9a9aab;
+    --border: #33333f;
+    --accent: #8080f0;
+    --accent-text: #0e0e14;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 370px;
+  margin: 0;
+  padding: 14px;
+  background: var(--bg);
+  color: var(--text);
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+h1 { font-size: 17px; margin: 0; }
+h2 { font-size: 13px; margin: 14px 0 6px; }
+.hint { color: var(--muted); font-weight: normal; font-size: 11px; }
+
+.switch { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.switch input { display: none; }
+.slider {
+  width: 32px; height: 18px; border-radius: 9px;
+  background: var(--border); position: relative; transition: background .15s;
+}
+.slider::after {
+  content: ""; position: absolute; top: 2px; left: 2px;
+  width: 14px; height: 14px; border-radius: 50%; background: #fff; transition: transform .15s;
+}
+.switch input:checked + .slider { background: var(--accent); }
+.switch input:checked + .slider::after { transform: translateX(14px); }
+.switch-label { color: var(--muted); font-size: 12px; }
+
+.memory { background: var(--surface); border-radius: 8px; padding: 10px; }
+.memory-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
+.bar { height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
+.bar-fill { height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+.bar-fill.high { background: var(--warn); }
+.bar-fill.critical { background: var(--danger); }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 10px 0; text-align: center; }
+.stats div { background: var(--surface); border-radius: 8px; padding: 6px 2px; }
+.stats strong { display: block; font-size: 16px; }
+.stats span { color: var(--muted); font-size: 11px; }
+
+.actions { display: flex; flex-direction: column; gap: 6px; }
+
+button {
+  font: inherit; border: 0; border-radius: 6px; cursor: pointer; padding: 8px 10px;
+}
+button:disabled { opacity: .5; cursor: default; }
+.primary { background: var(--accent); color: var(--accent-text); font-weight: 600; }
+.secondary { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
+
+#tab-list { list-style: none; margin: 0; padding: 0; max-height: 240px; overflow-y: auto; }
+#tab-list li {
+  display: flex; align-items: center; gap: 8px; padding: 6px 4px;
+  border-bottom: 1px solid var(--border);
+}
+#tab-list img { width: 16px; height: 16px; flex: none; }
+.tab-info { flex: 1; min-width: 0; cursor: pointer; }
+.tab-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tab-meta { color: var(--muted); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tab-meta .blocked { color: var(--warn); }
+.row-btn {
+  flex: none; padding: 3px 8px; font-size: 11px;
+  background: var(--surface); color: var(--text); border: 1px solid var(--border);
+}
+.row-btn.link { background: none; border: 0; color: var(--muted); padding: 3px 4px; }
+.row-btn.link:hover { color: var(--text); }
+
+.empty { color: var(--muted); text-align: center; padding: 10px 0; margin: 0; }
+
+details { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 8px; }
+summary { cursor: pointer; font-weight: 600; }
+.field { display: block; margin-top: 10px; }
+.field select, .field textarea {
+  font: inherit; color: var(--text); background: var(--surface);
+  border: 1px solid var(--border); border-radius: 6px; padding: 4px 6px;
+}
+.field textarea { display: block; width: 100%; margin-top: 4px; resize: vertical; }
+.check { display: flex; align-items: center; gap: 6px; margin-top: 8px; }

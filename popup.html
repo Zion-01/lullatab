@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lullatab</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lullatab</h1>
+      <label class="switch" title="Put idle tabs to sleep automatically">
+        <input type="checkbox" id="enabled" />
+        <span class="slider"></span>
+        <span class="switch-label">Auto-sleep</span>
+      </label>
+    </header>
+
+    <section class="memory" id="memory">
+      <div class="memory-row">
+        <span>Computer memory in use</span>
+        <strong id="mem-text">–</strong>
+      </div>
+      <div class="bar"><div class="bar-fill" id="mem-bar"></div></div>
+    </section>
+
+    <section class="stats">
+      <div><strong id="stat-open">0</strong><span>open</span></div>
+      <div><strong id="stat-awake">0</strong><span>awake</span></div>
+      <div><strong id="stat-asleep">0</strong><span>asleep</span></div>
+      <div><strong id="stat-total">0</strong><span>slept so far</span></div>
+    </section>
+
+    <section class="actions">
+      <button id="sleep-all" class="primary">Sleep all background tabs</button>
+      <button id="close-dupes" class="secondary" hidden></button>
+    </section>
+
+    <section>
+      <h2>Awake tabs <span class="hint">oldest first</span></h2>
+      <ul id="tab-list"></ul>
+      <p id="empty" class="empty" hidden>Nothing else is awake. Nice and lean.</p>
+    </section>
+
+    <details>
+      <summary>Settings</summary>
+      <label class="field">
+        Sleep tabs after
+        <select id="idleMinutes">
+          <option value="5">5 minutes</option>
+          <option value="15">15 minutes</option>
+          <option value="30">30 minutes</option>
+          <option value="60">1 hour</option>
+          <option value="120">2 hours</option>
+          <option value="240">4 hours</option>
+        </select>
+        of not being used
+      </label>
+      <label class="check"><input type="checkbox" id="skipPinned" /> Keep pinned tabs awake</label>
+      <label class="check"><input type="checkbox" id="skipAudible" /> Keep tabs playing audio awake</label>
+      <label class="field">
+        Sites to always keep awake <span class="hint">one per line</span>
+        <textarea id="whitelist" rows="3" placeholder="mail.google.com&#10;music.youtube.com"></textarea>
+      </label>
+    </details>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
