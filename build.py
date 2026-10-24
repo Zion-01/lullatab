@@ -51,6 +51,10 @@ def build(name, manifest):
         z.writestr("manifest.json", json.dumps(manifest, indent=2) + "\n")
         for f in FILES:
             z.write(ROOT / f, f)
+    # Unversioned copy for GitHub releases, so the README's
+    # releases/latest/download/... links keep working across versions.
+    latest = DIST / f"lullatab-{name}.zip"
+    latest.write_bytes(out.read_bytes())
     print(f"built {out.relative_to(ROOT)} ({out.stat().st_size // 1024} KB)")
     return out
 
